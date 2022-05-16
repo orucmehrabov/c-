@@ -12,14 +12,17 @@ namespace Console_Application
         public string LastName;
         public string GroupNo;
         public string Type;
-        public Student(int id, string FirstName, string MidleName, string LastName, string GroupNo, string Type)
+        public bool Guaranty;
+
+        public Student(int id, string firstName, string midleName, string lastName, string groupNo, string type, bool guaranty)
         {
             this.Id = id;
-            this.FirstName = FirstName;
-            this.MidleName = MidleName;
-            this.LastName = LastName;
-            this.GroupNo = GroupNo;
-            this.Type = Type;
+            this.FirstName = firstName;
+            this.MidleName = midleName;
+            this.LastName = lastName;
+            this.GroupNo = groupNo;
+            this.Type = type;
+            this.Guaranty = guaranty;
         }
         public int Id
         {
